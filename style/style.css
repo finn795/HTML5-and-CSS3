@@ -33,7 +33,7 @@ body {
 
 .main-header-list {
     list-style-type: none;
-    text-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3);
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
     width: 422px;
     height: 128px;
     font-family: Arial;
@@ -63,7 +63,6 @@ body {
 
 .main-header-product-photo {
     display: block;
-    background-color: #ffffff;
     width: 469px;
     height: 214px;
     float: right;
@@ -113,7 +112,7 @@ section video {
     width: 430px;
     height: 245px;
     float: right;
-    outline: inherit;
+    outline: none;
 }
 
 .dignity {
@@ -275,14 +274,14 @@ section video {
 
 .reviews-wrap-photo {
     width: 75px;
-    height: 75px;
-    background-color: #445161;
+    min-height: 75px;
+    background-image: url('../img/foto1.png');
     border-radius: 50%;
 }
 
 .reviews-text {
     width: 470px;
-    height: 120px;
+    min-height: 120px;
     border-radius: 5px;
     background-color: #ebebeb;
     position: relative;
@@ -316,4 +315,366 @@ section video {
     font-weight: 400;
     color: #989898;
     position: relative;
+}
+
+.buy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 145px 50px 145px;
+    box-sizing: border-box;
+}
+
+.buy-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 29px 0;
+    font-family: Arial;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+}
+
+.buy-standart,
+.buy-premium,
+.buy-lux {
+    width: 300px;
+    box-sizing: border-box;
+    background-color: #445162;
+    border-radius: 5px;
+}
+
+.buy-standart {
+    min-height: 306px;
+    align-self: flex-end;
+}
+
+.buy-premium {
+    min-height: 404px;
+    align-self: flex-end;
+}
+
+.buy-lux {
+    min-height: 499px;
+    align-self: flex-end;
+}
+
+.buy-standart-title,
+.buy-premium-title,
+.buy-lux-title {
+    margin: 16px 0 18px 0;
+    display: block;
+    font-family: Arial;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    background-color: #445162;
+}
+
+.buy-standart-price,
+.buy-premium-price,
+.buy-lux-price {
+    min-height: 31px;
+    display: block;
+    text-align: center;
+    font-family: Arial;
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #445162;
+    background-color: #ffffff;
+    border: 2.0px solid #445162;
+    padding: 18px;
+}
+
+.buy-standart-list {
+    width: 242px;
+    min-height: 86px;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.buy-premium-list {
+    width: 242px;
+    min-height: 182px;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.buy-lux-list {
+    width: 250px;
+    min-height: 278px;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    list-style-position: inside;
+    padding: 0 30px 0 20px;
+}
+
+.btn {
+    display: flex;
+    width: 260px;
+    min-height: 40px;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    color: #445161;
+    margin: 0 20px 20px 20px;
+}
+
+.btn-text {
+    margin: auto;
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.btn:hover {
+    color: red;
+    background-color: yellow;
+}
+
+.btn:active {
+    color: blue;
+    background-color: aquamarine;
+}
+
+.contacts {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*min-height: 509px;*/
+    padding: 50px;
+    background-color: #445162;
+}
+
+.contacts-title {
+    display: block;
+    width: 100%;
+    margin: 0 0 30px 0;
+    text-align: center;
+    font-family: Arial;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.contacts-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 500px;
+    margin: 0 46px 0 0;
+}
+
+.contacts-form input[type="text"],
+.contacts-form input[type="email"],
+.contacts-form textarea {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    margin: 0 0 20px 0;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #ffffff;
+    outline: none;
+    text-transform: capitalize;
+}
+
+input[placeholder],
+textarea[placeholder] {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #445162;
+    text-align: left;
+    text-overflow: ellipsis;
+}
+
+.contacts-form input[type="text"]:hover,
+.contacts-form input[type="email"]:hover,
+.contacts-form textarea:hover {
+    background-color: darkgreen;
+    color: whitesmoke;
+    border-color: yellow;
+}
+
+.contacts-form input[type="text"]:hover::placeholder,
+.contacts-form input[type="email"]:hover::placeholder,
+.contacts-form textarea:hover::placeholder {
+    color: darkblue;
+}
+
+.contacts-form textarea {
+    width: 500px;
+    height: 170px;
+    resize: none;
+}
+
+.contacts-form input[type="submit"] {
+    width: 140px;
+    height: 40px;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #445162;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+}
+
+.contacts-form input[type="submit"]:hover {
+    background-color: red;
+    color: yellow;
+}
+
+.contacts-form input[type="submit"]:active {
+    background-color: blue;
+    color: aquamarine;
+}
+
+.contacts-wrap {
+    width: 240px;
+    height: 230px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 -46px 0 46px;
+}
+
+.contacts-wrap-skype {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.contacts-wrap-icq {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.contacts-wrap-email {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.contacts-wrap-tel {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.contacts-wrap-skype:before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 26px;
+    position: absolute;
+    top: 1px;
+    left: -30px;
+    background-image: url('../img/skype_icon_319.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contacts-wrap-icq:before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: -30px;
+    background-image: url('../img/icq_icon_324.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contacts-wrap-email:before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: -30px;
+    background-image: url('../img/email_icon_332.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contacts-wrap-tel:before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 23px;
+    position: absolute;
+    left: -30px;
+    background-image: url('../img/phone_icon_337.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contacts-social-icon {
+    width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 0 -24px;
+}
+
+a:hover {
+    color: aquamarine;
+}
+
+a:active {
+    color: red;
+}
+
+.end {
+    width: 100%;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.end-end {
+    text-transform: uppercase;
 }
